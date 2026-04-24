@@ -4,24 +4,20 @@
   background: #e9c4cf;
   color: #333;
   font-size: 28px;
-  border-radius: 50px;
+  border-radius: 999px; /* bem redondo */
   text-decoration: none;
   font-weight: bold;
-
-  box-shadow: 0 6px 0 #c89aa8;
-  transition: all 0.15s ease;
+  transition: 0.2s;
 }
 
-/* Hover (levanta um pouco) */
+/* Hover */
 .botao:hover {
-  transform: translateY(-2px);
-  box-shadow: 0 8px 0 #c89aa8;
+  transform: scale(1.05);
 }
 
-/* Clique (afunda) */
+/* Clique */
 .botao:active {
-  transform: translateY(4px);
-  box-shadow: 0 2px 0 #c89aa8;
+  transform: scale(0.95);
 }
 
 /* Reset */
