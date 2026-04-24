@@ -88,13 +88,21 @@ p {
 
 /* Botão */
 .botao {
-  text-decoration: none;
-  background: #c471ed;
-  color: white;
-  padding: 12px 25px;
-  border-radius: 8px;
-  transition: 0.3s;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 70px;        /* controla a altura */
+  padding: 0 60px;     /* largura (deixa comprido igual da imagem) */
+
+  background: #e9c4cf;
+  color: #333;
+  font-size: 28px;
   font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 999px; /* deixa totalmente redondo */
+  transition: 0.2s;
 }
 
 .botao:hover {
