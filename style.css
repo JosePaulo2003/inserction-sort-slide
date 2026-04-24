@@ -1,26 +1,36 @@
-.botao {
-  display: inline-block;
-  height: 60px;              /* altura fixa */
-  line-height: 60px;         /* centraliza o texto verticalmente */
-  padding: 0 40px;           /* espaço lateral */
-  background: #e9c4cf;
-  color: #333;
-  font-size: 26px;
-  font-weight: bold;
-  text-decoration: none;
+.nav-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
 
-  border-radius: 30px;       /* metade da altura = perfeito */
-  transition: 0.2s;
+    height: 55px;
+    padding: 0 35px;
+
+    background: #fff;
+    color: #e17055;
+    text-decoration: none;
+
+    border-radius: 999px; /* bem redondo */
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 1.2rem;
+    font-weight: 700;
+
+    border: none;
+    box-shadow: none; /* sem sombra */
+
+    transition: all 0.2s ease;
 }
 
 /* Hover */
-.botao:hover {
-  transform: scale(1.05);
+.nav-btn:hover {
+    transform: scale(1.05);
+    background: #fff5f5;
 }
 
 /* Clique */
-.botao:active {
-  transform: scale(0.95);
+.nav-btn:active {
+    transform: scale(0.95);
 }
 
 /* Reset */
