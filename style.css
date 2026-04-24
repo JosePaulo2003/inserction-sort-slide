@@ -12,25 +12,18 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  animation: fundo 12s infinite;
+
+  background: linear-gradient(-45deg, #f5f5dc, #ffb6c1, #a18cd1, #4facfe);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
 }
 
-/* Animação seguindo a ordem */
-@keyframes fundo {
+@keyframes gradient {
   0% {
-    background: linear-gradient(bege, #f5f5dc);
-  }
-  25% {
-    background: linear-gradient(#f5f5dc, #ffb6c1);
-  }
-  50% {
-    background: linear-gradient(#ffb6c1, #a18cd1);
-  }
-  75% {
-    background: linear-gradient(#a18cd1, #4facfe);
+    background-position: 0% 50%;
   }
   100% {
-    background: linear-gradient(#4facfe, #f5f5dc);
+    background-position: 100% 50%;
   }
 }
 
