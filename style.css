@@ -12,22 +12,25 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-
-  background: linear-gradient(-45deg, #f5f5dc, #ffb6c1, #a18cd1, #4facfe);
-  background-size: 400% 400%;
-  animation: gradient 10s ease infinite;
+  animation: fundo 12s infinite;
 }
 
-/* Animação */
-@keyframes gradient {
+/* Animação seguindo a ordem */
+@keyframes fundo {
   0% {
-    background-position: 0% 50%;
+    background: linear-gradient(bege, #f5f5dc);
+  }
+  25% {
+    background: linear-gradient(#f5f5dc, #ffb6c1);
   }
   50% {
-    background-position: 100% 50%;
+    background: linear-gradient(#ffb6c1, #a18cd1);
+  }
+  75% {
+    background: linear-gradient(#a18cd1, #4facfe);
   }
   100% {
-    background-position: 0% 50%;
+    background: linear-gradient(#4facfe, #f5f5dc);
   }
 }
 
