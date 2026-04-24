@@ -1,12 +1,16 @@
 .botao {
   display: inline-block;
-  padding: 12px 35px;
+  height: 60px;              /* altura fixa */
+  line-height: 60px;         /* centraliza o texto verticalmente */
+  padding: 0 40px;           /* espaço lateral */
+  font-family: 'Comic Neue', cursive;
   background: #e9c4cf;
   color: #333;
   font-size: 26px;
-  border-radius: 30px; /* menos exagerado que 999px */
-  text-decoration: none;
   font-weight: bold;
+  text-decoration: none;
+
+  border-radius: 30px;       /* metade da altura = perfeito */
   transition: 0.2s;
 }
 
