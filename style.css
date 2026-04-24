@@ -4,20 +4,20 @@
     justify-content: center;
     gap: 8px;
 
-    height: 55px;
-    padding: 0 35px;
+    height: 70px;          /* aumentei a altura */
+    padding: 0 50px;       /* mais largo */
 
     background: #fff;
     color: #e17055;
     text-decoration: none;
 
-    border-radius: 999px; /* bem redondo */
+    border-radius: 999px;
     font-family: 'Bubblegum Sans', cursive;
-    font-size: 1.2rem;
+    font-size: 1.6rem;     /* texto maior */
     font-weight: 700;
 
     border: none;
-    box-shadow: none; /* sem sombra */
+    box-shadow: none;
 
     transition: all 0.2s ease;
 }
