@@ -96,14 +96,14 @@ p {
   padding: 0 60px;
 
   background: #e9c4cf;
-  color: #333;
+  color: #ffffff; /* texto branco */
+
   font-size: 28px;
   font-weight: bold;
   text-decoration: none;
 
   border-radius: 999px;
-
-  font-family: 'Bubblegum Sans', cursive; /* aqui */
+  font-family: 'Bubblegum Sans', cursive;
 
   transition: 0.2s;
 }
