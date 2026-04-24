@@ -13,7 +13,7 @@ body {
   align-items: center;
   justify-content: center;
 
-  background: linear-gradient(-45deg, #ff7eb3, #a18cd1, #89f7fe, #c471ed);
+  background: linear-gradient(-45deg, #ff9a9e, #c471ed, #7ee8fa, #a18cd1);
   background-size: 400% 400%;
   animation: gradient 10s ease infinite;
 }
@@ -54,12 +54,17 @@ p {
 /* Botão */
 .botao {
   text-decoration: none;
-  background: #a18cd1;
+  background: #c471ed;
   color: white;
   padding: 12px 25px;
   border-radius: 8px;
   transition: 0.3s;
   font-weight: bold;
+}
+
+.botao:hover {
+  background: #9b4dca;
+  transform: scale(1.05);
 }
 
 .botao:hover {
