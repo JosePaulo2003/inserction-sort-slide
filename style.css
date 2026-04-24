@@ -117,9 +117,3 @@ p {
   background: #7a5cff;
   transform: scale(1.05);
 }
-
-.botao:active {
-  background: #ffffff;
-  color: #e9c4cf;
-  transform: scale(0.95);
-}
