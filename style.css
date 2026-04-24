@@ -1,0 +1,68 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fundo animado */
+body {
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  background: linear-gradient(-45deg, #4facfe, #00f2fe, #43e97b, #f7971e);
+  background-size: 400% 400%;
+  animation: gradient 10s ease infinite;
+}
+
+/* Animação */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Caixa */
+.container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  text-align: center;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* Texto */
+h1 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+p {
+  margin-bottom: 25px;
+  color: #666;
+}
+
+/* Botão */
+.botao {
+  text-decoration: none;
+  background: #4facfe;
+  color: white;
+  padding: 12px 25px;
+  border-radius: 8px;
+  transition: 0.3s;
+  font-weight: bold;
+}
+
+.botao:hover {
+  background: #0077ff;
+  transform: scale(1.05);
+}
