@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notação Big O - Insertion Sort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-shapes" id="shapes"></div>
+
+    <main class="slide-container">
+        <h1 class="slide-header">Notação big(0)</h1>
+
+        <div class="content-wrapper">
+            <div class="cards-row">
+                <div class="flip-card" id="card1">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card-1">
+                            <div class="card-icon">🔍</div>
+                            <h3 class="card-title">O que é Análise de Complexidade?</h3>
+                            <p class="card-hint">Clique para descobrir!</p>
+                        </div>
+                        <div class="flip-card-back card-1-back">
+                            <p class="card-answer">Entender como tempo e espaço crescem com o tamanho da entrada</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="card2">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card-2">
+                            <div class="card-icon">⭐</div>
+                            <h3 class="card-title">Por que é importante?</h3>
+                            <p class="card-hint">Clique para descobrir!</p>
+                        </div>
+                        <div class="flip-card-back card-2-back">
+                            <p class="card-answer">Escolher o algoritmo certo, otimizando recursos</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="flip-card" id="card3">
+                    <div class="flip-card-inner">
+                        <div class="flip-card-front card-3">
+                            <div class="card-icon">📊</div>
+                            <h3 class="card-title">Notação Big O (O)</h3>
+                            <p class="card-hint">Clique para descobrir!</p>
+                        </div>
+                        <div class="flip-card-back card-3-back">
+                            <p class="card-answer">Limite superior do crescimento. Representa o pior caso</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="graph-section">
+                <h2 class="graph-title">Como o tempo cresce?</h2>
+                <div class="graph-container">
+                    <svg viewBox="0 0 400 250" class="graph-svg">
+                        <defs>
+                            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+                                <stop offset="0%" style="stop-color:#e17055;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#fdcb6e;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <line x1="40" y1="220" x2="380" y2="220" stroke="#636e72" stroke-width="2"/>
+                        <line x1="40" y1="220" x2="40" y2="20" stroke="#636e72" stroke-width="2"/>
+                        <text x="200" y="245" text-anchor="middle" fill="#2d3436" font-size="14" font-family="Comic Neue">Tamanho da entrada (n)</text>
+                        <text x="15" y="120" text-anchor="middle" fill="#2d3436" font-size="14" font-family="Comic Neue" transform="rotate(-90 15 120)">Tempo</text>
+                        <polyline class="graph-line graph-o1" points="40,220 100,215 160,210 220,205 280,200 340,195 380,190"/>
+                        <polyline class="graph-line graph-on" points="40,220 100,190 160,160 220,130 280,100 340,70 380,40"/>
+                        <text x="360" y="185" fill="#00b894" font-size="12" font-family="Comic Neue" font-weight="bold">O(1)</text>
+                        <text x="360" y="35" fill="#e17055" font-size="12" font-family="Comic Neue" font-weight="bold">O(n)</text>
+                        <circle class="graph-dot" cx="40" cy="220" r="4" fill="#e17055"/>
+                        <circle class="graph-dot" cx="380" cy="190" r="4" fill="#00b894"/>
+                        <circle class="graph-dot" cx="380" cy="40" r="4" fill="#e17055"/>
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <nav class="navigation">
+        <a href="../primeiro/index.html" class="nav-btn prev-btn">
+            <span class="arrow">←</span>
+            <span class="nav-label">Anterior</span>
+        </a>
+        <a href="../terceiro/index.html" class="nav-btn next-btn">
+            <span class="nav-label">Próximo</span>
+            <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

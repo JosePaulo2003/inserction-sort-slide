@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Como funciona o Insertion Sort</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-particles" id="particles"></div>
+
+    <main class="slide-container">
+        <h1 class="slide-header">Analise empirica do custo de tempo e espaço dos algoritmos de ordenação</h1>
+
+        <div class="intro-box">
+            <h2 class="section-title">Como funciona</h2>
+            <p class="section-text">Constrói a lista ordenada um elemento por vez</p>
+        </div>
+
+        <div class="sorting-area">
+            <div class="array-container" id="arrayContainer">
+                <div class="array-block" data-value="5" data-index="0"><img src="../assets/images/imagem_1.png" alt="girafa 5"></div>
+                <div class="array-block" data-value="2" data-index="1"><img src="../assets/images/imagem_1.png" alt="girafa 2"></div>
+                <div class="array-block" data-value="4" data-index="2"><img src="../assets/images/imagem_1.png" alt="girafa 4"></div>
+                <div class="array-block" data-value="1" data-index="3"><img src="../assets/images/imagem_1.png" alt="girafa 1"></div>
+                <div class="array-block" data-value="3" data-index="4"><img src="../assets/images/imagem_1.png" alt="girafa 3"></div>
+            </div>
+
+            <div class="arrow-container" id="arrowContainer"></div>
+
+            <div class="controls">
+                <button class="control-btn play-btn" id="playBtn">
+                    <span class="btn-icon">▶</span> Play
+                </button>
+                <button class="control-btn reset-btn" id="resetBtn">
+                    <span class="btn-icon">↺</span> Reiniciar
+                </button>
+            </div>
+        </div>
+
+        <div class="steps-area">
+            <h2 class="steps-title">Passo a passo</h2>
+            <div class="progress-bar">
+                <div class="progress-fill" id="progressFill"></div>
+            </div>
+            <ul class="steps-list" id="stepsList">
+                <li class="step-item" data-step="0">
+                    <span class="step-number">1</span>
+                    <span class="step-text">Começa com o segundo elemento</span>
+                </li>
+                <li class="step-item" data-step="1">
+                    <span class="step-number">2</span>
+                    <span class="step-text">Compara com elementos anteriores</span>
+                </li>
+                <li class="step-item" data-step="2">
+                    <span class="step-number">3</span>
+                    <span class="step-text">Desloca elementos maiores</span>
+                </li>
+                <li class="step-item" data-step="3">
+                    <span class="step-number">4</span>
+                    <span class="step-text">Insere na posição correta</span>
+                </li>
+                <li class="step-item" data-step="4">
+                    <span class="step-number">5</span>
+                    <span class="step-text">Repete até o final</span>
+                </li>
+            </ul>
+        </div>
+
+    </main>
+
+    <nav class="navigation">
+        <a href="../segundo/index.html" class="nav-btn prev-btn">
+            <span class="arrow">←</span>
+            <span class="nav-label">Anterior</span>
+        </a>
+        <a href="../quarto/index.html" class="nav-btn next-btn">
+            <span class="nav-label">Próximo</span>
+            <span class="arrow">→</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

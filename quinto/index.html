@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custo de Tempo e Espaço - Insertion Sort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-decoration dec-1">★</div>
+    <div class="floating-decoration dec-2">●</div>
+    <div class="floating-decoration dec-3">▲</div>
+    <div class="floating-decoration dec-4">♥</div>
+    <div class="floating-decoration dec-5">★</div>
+    <div class="floating-decoration dec-6">◆</div>
+
+    <header class="slide-header">
+        <h1>Custo de Tempo e Espaço: Uma Visão Empírica</h1>
+    </header>
+
+    <main class="slide-content">
+        <div class="legend">
+            <div class="legend-item">
+                <span class="legend-color legend-time"></span>
+                <span class="legend-text">Tempo de Execução</span>
+            </div>
+            <div class="legend-item">
+                <span class="legend-color legend-space"></span>
+                <span class="legend-text">Uso de Memória</span>
+            </div>
+        </div>
+
+        <div class="chart-container">
+            <div class="chart-y-axis">
+                <span>Alto</span>
+                <span>Médio</span>
+                <span>Baixo</span>
+            </div>
+            <div class="chart-area" id="chartArea">
+                <div class="chart-grid">
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                    <div class="grid-line"></div>
+                </div>
+                <div class="bars-row" id="barsRow"></div>
+            </div>
+        </div>
+
+        <div class="chart-x-label">Tamanho da Entrada (n)</div>
+
+        <div class="controls">
+            <button class="control-btn" id="addDataBtn">
+                <span class="btn-icon">📊</span>
+                Adicionar Dados
+            </button>
+            <button class="control-btn" id="resetBtn">
+                <span class="btn-icon">🔄</span>
+                Reiniciar
+            </button>
+        </div>
+
+        <div class="stats-panel">
+            <div class="stat-box">
+                <div class="stat-label">Tempo Total</div>
+                <div class="stat-value" id="timeValue">0</div>
+                <div class="stat-unit">ms</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Espaço Usado</div>
+                <div class="stat-value" id="spaceValue">0</div>
+                <div class="stat-unit">KB</div>
+            </div>
+            <div class="stat-box">
+                <div class="stat-label">Elementos</div>
+                <div class="stat-value" id="elementsValue">0</div>
+                <div class="stat-unit">n</div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="slide-nav">
+        <a href="../quarto/index.html" class="nav-btn nav-prev">
+            <span class="nav-arrow">◀</span>
+            <span class="nav-text">Anterior</span>
+        </a>
+        <div class="slide-counter">5 / 6</div>
+        <a href="../sexto/index.html" class="nav-btn nav-next">
+            <span class="nav-text">Próximo</span>
+            <span class="nav-arrow">▶</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

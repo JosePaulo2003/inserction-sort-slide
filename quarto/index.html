@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise do Algoritmo - Insertion Sort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-decoration dec-1">★</div>
+    <div class="floating-decoration dec-2">●</div>
+    <div class="floating-decoration dec-3">▲</div>
+    <div class="floating-decoration dec-4">♥</div>
+    <div class="floating-decoration dec-5">★</div>
+
+    <header class="slide-header">
+        <h1>Análise do Algoritmo: O Custo do Insertion Sort</h1>
+    </header>
+
+    <main class="slide-content">
+        <div class="cards-container">
+            <div class="info-card card-worst" data-card="1">
+                <div class="card-number">1</div>
+                <div class="card-title">Pior Caso</div>
+                <div class="card-complexity complexity-bad">O(n²)</div>
+                <div class="card-description">
+                    Lista em ordem decrescente. Cada elemento comparado com todos os anteriores
+                </div>
+                <div class="card-hint">Clique para expandir!</div>
+            </div>
+
+            <div class="info-card card-best" data-card="2">
+                <div class="card-number">2</div>
+                <div class="card-title">Melhor Caso</div>
+                <div class="card-complexity complexity-good">O(n)</div>
+                <div class="card-description">
+                    Lista já ordenada. Cada elemento comparado apenas com o antecessor
+                </div>
+                <div class="card-hint">Clique para expandir!</div>
+            </div>
+
+            <div class="info-card card-average" data-card="3">
+                <div class="card-number">3</div>
+                <div class="card-title">Caso Médio</div>
+                <div class="card-complexity complexity-bad">O(n²)</div>
+                <div class="card-description">
+                    Na maioria dos casos, o desempenho se aproxima do pior caso
+                </div>
+                <div class="card-hint">Clique para expandir!</div>
+            </div>
+        </div>
+
+        <div class="chart-section">
+            <h2 class="chart-title">Comparação Visual</h2>
+            <div class="bar-chart">
+                <div class="bar-wrapper">
+                    <div class="chart-bar bar-worst" data-height="90"></div>
+                    <span class="bar-label">Pior</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="chart-bar bar-best" data-height="20"></div>
+                    <span class="bar-label">Melhor</span>
+                </div>
+                <div class="bar-wrapper">
+                    <div class="chart-bar bar-average" data-height="65"></div>
+                    <span class="bar-label">Médio</span>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <nav class="slide-nav">
+        <a href="../terceiro/index.html" class="nav-btn nav-prev">
+            <span class="nav-arrow">◀</span>
+            <span class="nav-text">Anterior</span>
+        </a>
+        <div class="slide-counter">4 / 6</div>
+        <a href="../quinto/index.html" class="nav-btn nav-next">
+            <span class="nav-text">Próximo</span>
+            <span class="nav-arrow">▶</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>

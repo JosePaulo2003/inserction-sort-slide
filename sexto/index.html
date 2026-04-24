@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução a Análise de Complexidade - Insertion Sort</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Comic+Neue:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="floating-decoration dec-1">★</div>
+    <div class="floating-decoration dec-2">●</div>
+    <div class="floating-decoration dec-3">▲</div>
+    <div class="floating-decoration dec-4">♥</div>
+    <div class="floating-decoration dec-5">★</div>
+    <div class="floating-decoration dec-6">◆</div>
+
+    <div class="confetti-container" id="confettiContainer"></div>
+
+    <header class="slide-header">
+        <h1>Introdução a Análise de Complexidade</h1>
+    </header>
+
+    <main class="slide-content">
+        <div class="intro-bullets">
+            <div class="bullet-item">
+                <span class="bullet-icon">🔍</span>
+                <span class="bullet-text">Mede a eficiência do algoritmo (tempo e memória)</span>
+            </div>
+            <div class="bullet-item">
+                <span class="bullet-icon">📈</span>
+                <span class="bullet-text">Analisa o comportamento com o aumento dos dados</span>
+            </div>
+            <div class="bullet-item">
+                <span class="bullet-icon">🅾️</span>
+                <span class="bullet-text">Usa Big O → foca no crescimento do algoritmo</span>
+            </div>
+        </div>
+
+        <div class="mindmap-container">
+            <div class="mindmap-root">
+                <div class="node root-node">Análise de Complexidade</div>
+                <div class="connection-lines">
+                    <div class="conn-line line-left"></div>
+                    <div class="conn-line line-right"></div>
+                </div>
+            </div>
+
+            <div class="branches-row">
+                <div class="branch branch-left" id="branchTipos">
+                    <div class="node branch-node">
+                        <span class="branch-arrow">▼</span>
+                        Tipos
+                    </div>
+                    <div class="sub-nodes" id="subTipos">
+                        <div class="sub-node sub-time">
+                            <span class="sub-icon">⏱️</span>
+                            <span>Tempo → número de operações</span>
+                        </div>
+                        <div class="sub-node sub-space">
+                            <span class="sub-icon">💾</span>
+                            <span>Espaço → uso de memória</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="branch branch-right" id="branchCasos">
+                    <div class="node branch-node">
+                        <span class="branch-arrow">▼</span>
+                        Casos
+                    </div>
+                    <div class="sub-nodes" id="subCasos">
+                        <div class="sub-node case-best">
+                            <span class="case-dot dot-green"></span>
+                            <span>Melhor caso → rápido</span>
+                        </div>
+                        <div class="sub-node case-average">
+                            <span class="case-dot dot-yellow"></span>
+                            <span>Caso médio → comum</span>
+                        </div>
+                        <div class="sub-node case-worst">
+                            <span class="case-dot dot-red"></span>
+                            <span>Pior caso → lento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <nav class="slide-nav">
+        <a href="../quinto/index.html" class="nav-btn nav-prev">
+            <span class="nav-arrow">◀</span>
+            <span class="nav-text">Anterior</span>
+        </a>
+        <div class="slide-counter">6 / 6</div>
+        <a href="../primeiro/index.html" class="nav-btn nav-restart">
+            <span class="nav-text">Voltar ao Início</span>
+            <span class="nav-arrow">🏠</span>
+        </a>
+    </nav>
+
+    <script src="main.js"></script>
+</body>
+</html>
