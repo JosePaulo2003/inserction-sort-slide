@@ -1,3 +1,29 @@
+.botao {
+  display: inline-block;
+  padding: 15px 40px;
+  background: #e9c4cf;
+  color: #333;
+  font-size: 28px;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: bold;
+
+  box-shadow: 0 6px 0 #c89aa8;
+  transition: all 0.15s ease;
+}
+
+/* Hover (levanta um pouco) */
+.botao:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #c89aa8;
+}
+
+/* Clique (afunda) */
+.botao:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #c89aa8;
+}
+
 /* Reset */
 * {
   margin: 0;
