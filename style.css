@@ -1,10 +1,10 @@
 .botao {
   display: inline-block;
-  padding: 15px 40px;
+  padding: 12px 35px;
   background: #e9c4cf;
   color: #333;
-  font-size: 28px;
-  border-radius: 1000px; /* bem redondo */
+  font-size: 26px;
+  border-radius: 30px; /* menos exagerado que 999px */
   text-decoration: none;
   font-weight: bold;
   transition: 0.2s;
